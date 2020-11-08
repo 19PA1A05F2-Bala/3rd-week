@@ -1,0 +1,10 @@
+{% extends 'userbase.html' %}
+ 
+{% block content %}
+<div class="d-flex align-items-center form">
+        <span>{{question.key}}</span> 
+        <input id="userinput" type="text" placeholder="Type here..." class="form-control">
+        <button class="btn" id="userinput" onclick="sendinput('{{question.key}}')">Send</button>
+</div>
+
+{% endblock %}

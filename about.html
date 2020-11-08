@@ -1,0 +1,10 @@
+{% extends 'botbase.html' %}
+{% block content %}
+        <p>Hello there ! My name is {{data.name}}. I can do</p>
+        <ul>
+            {% for tasks in data.tasks%}
+            <li>{{tasks.description}}</li>
+            {% endfor %}
+        </ul>
+
+{% endblock %}
